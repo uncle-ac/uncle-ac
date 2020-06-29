@@ -89,7 +89,8 @@ deploy:
 backup:
     type: git
     repository:
-       github: git@github.com:uncleacc/uncleacc.github.io.git,backup
+      github: git@github.com:uncleacc/uncleacc.github.io.git
+    branch: master
       #  gitcafe: git@github.com:xxx/xxx.git,branchName
 feed:
   type: atom
