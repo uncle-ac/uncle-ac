@@ -14,13 +14,13 @@ keywords:
 description: 为你的评论系统添加自定义表情
 photos: https://cdn.jsdelivr.net/gh/uncleacc/Img/textbg/36.webp
 ---
-# 前言
+## 前言
 Valine是一个很好的评论系统，今天我发布这篇文章主要是为了让小白少掉一些坑，先来看看成果:laughing:：   
 <img src="https://cdn.jsdelivr.net/gh/GamerNoTitle/ValineCDN/HONKAI3-Stan/70677f9c51bd601e60881da47d77a4e6189ad895.gif" />   
 ![](Valine添加自定义表情/0.png)   
 `还挺不错的吧`   
 
-# 教程
+## 教程
 [官方文档](https://valine.js.org/changelog.html)   
 如果您不嫌弃鄙人的当然也可以直接用:kissing_smiling_eyes:   
 效果可以在我的博客评论区点击表情预览    
@@ -45,7 +45,7 @@ hexo clean && hexo g && hexo s
 
 ending~ 撒花。
 
-# 参考文档
+## 参考文档
 [Valine官方文档](https://valine.js.org/)
 
 [其他详细教程](https://cungudafa.gitee.io/post/8202.html#%EF%BC%883%EF%BC%89-%E6%A0%B9%E6%8D%AE%E9%82%AE%E7%AE%B1%E6%8B%89%E5%8F%96qq%E5%A4%B4%E5%83%8F)

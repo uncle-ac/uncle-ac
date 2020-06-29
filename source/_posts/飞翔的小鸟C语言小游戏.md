@@ -16,6 +16,7 @@ photos: https://cdn.jsdelivr.net/gh/uncleacc/Img/textbg/51.webp
 ---
 >今天有些疲倦，不想学习，就去网上学习做了一个小游戏，如果你是网友，没接触过图形库，要先安装esayx库，网上有许多，在这里不贴了，素材地址： https://pan.baidu.com/s/1GWnLePCiLcxlJHOaBKEeaA 密码：pmzq 💪
 
+* 成品视频: [Here](https://www.bilibili.com/video/BV1354y1Q7iB)
 <center>
 <font color="black" size=4>
 希望该文章能帮助到您

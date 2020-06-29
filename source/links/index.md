@@ -106,4 +106,8 @@ links:
       img: https://cdn.jsdelivr.net/gh/xiangshu233/cdn@1/img/custom/avatar.jpg
       name: 乡树
       desc: 谁会给你制定做事的规矩，除了你自己 那还有谁
+    - url: https://www.lostfawn.cn
+      name: 迷鹿
+      img: https://cdn.jsdelivr.net/gh/jack-bin183/cdn@1.7/img/custom/avatar.png
+      desc: 等待也是约会的一部分嘛
 ---

@@ -46,15 +46,15 @@ insight:
 算法:
     zh: 算法
     en:  algorithm 
-    img: https://cdn.jsdelivr.net/gh/uncleacc/cdn@1.4/img/banner/coding.jpg
+    img: https://cdn.jsdelivr.net/gh/uncleacc/CDN/img/cover/5.webp
 生活:
     zh: 生活
     en: live
-    img: https://cdn.jsdelivr.net/gh/uncleacc/cdn@1.4/img/banner/writing.jpg
+    img: https://cdn.jsdelivr.net/gh/uncleacc/CDN/img/cover/yjz5zk.jpg
 题目:
     zh: 题目
     en: question
-    img: https://cdn.jsdelivr.net/gh/uncleacc/cdn@1.4/img/banner/question.jpg
+    img: https://cdn.jsdelivr.net/gh/uncleacc/CDN/img/cover/3.webp
 记录:
     zh: 记录
     en: record
@@ -62,5 +62,5 @@ insight:
 技术:
     zh: 技术
     en: Skills
-    img: https://cdn.jsdelivr.net/gh/uncleacc/cdn@1.4/img/banner/reprint.jpg
+    img: https://cdn.jsdelivr.net/gh/uncleacc/img/cover/5.webp
 #tag

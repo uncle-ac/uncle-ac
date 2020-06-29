@@ -1,6 +1,7 @@
 ---
 title: 说说
 type: artitalk
+keywords: 咸鱼闲想
 comments: 'false'
 photos: https://cdn.jsdelivr.net/gh/uncleacc/Img/custom/4.webp
 ---
@@ -19,8 +20,17 @@ var placeholder1="只有Uncleacc才能评论哦"; //在编辑说说的输入框�
 var placeholder2="请输入您的头像URL！";  //在编辑密码的输入框中的占位符
 var lazy = 1; //是否开启懒加载动画
 var bgimg = "https://gitee.com/cungudafa/source/raw/master/img/gif/katon/Totoro2.gif"; //背景动画
+var atemoji_array={
+        a:"https://cdn.jsdelivr.net/gh/drew233/cdn/caihongtiao.webp",
+        b:"https://cdn.jsdelivr.net/gh/drew233/cdn/20200409130254.webp",
+        c:"https://cdn.jsdelivr.net/gh/drew233/cdn/20200409130258.webp",
+        d:"https://cdn.jsdelivr.net/gh/drew233/cdn/20200409130301.webp",
+        e:"https://cdn.jsdelivr.net/gh/drew233/cdn/kawayi.webp",
+        f:"https://cdn.jsdelivr.net/gh/drew233/cdn/20200409130304.webp"
+}
 </script>
 {% endraw %}
+<!-- <div id="artitalk_main"></div> -->
 <div id="lazy"></div>
 <div id="artitalk"></div>
-<script type="text/javascript" src="https://unpkg.com/artitalk"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/artitalk@v2.1.8"></script>

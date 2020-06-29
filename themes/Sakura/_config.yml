@@ -1,11 +1,11 @@
 # site name
-prefixName: こんにゃく1匹
-siteName: 一只蒟蒻仔
+prefixName: 
+siteName: Uncleacc
 # favicon and site master avatar
 favicon: /images/favicon.ico
 avatar: /img/custom/avatar.jpg
 url: https://uncleacc.github.io
-description: Enrich-everyday
+description: 真正的大师永远怀着一颗学徒的心
 cdn: https://cdn.jsdelivr.net/gh/uncleacc/cdn@1.4
 pjax: 1
 # 1开启
@@ -35,7 +35,8 @@ menus:
   留言板: { path: /comment/, fa: fa-pencil-square-o faa-tada }
   赞赏: { path: /donate/, fa: fa-heart faa-pulse }
   关于: { path: /, fa: fa-leaf faa-wrench , submenus: { 
-    我？: {path: /about/, fa: fa-meetup}, 
+    对话: {path: /about/, fa: fa-meetup}, 
+    我: {path: /custom/, fa: fa-address-book },
     主题: {path: /theme-sakura/, fa: iconfont icon-sakura },
     Lab: {path: /lab/, fa: fa-cogs },
   } }
@@ -50,10 +51,12 @@ bg:
   - https://cdn.jsdelivr.net/gh/uncleacc/Img/cover/2.webp
   - https://cdn.jsdelivr.net/gh/uncleacc/Img/cover/3.webp
   - https://cdn.jsdelivr.net/gh/uncleacc/Img/cover/4.webp
-  - https://cdn.jsdelivr.net/gh/uncleacc/Img/cover/5.webp
-  - https://cdn.jsdelivr.net/gh/uncleacc/Img/cover/6.webp
   - https://cdn.jsdelivr.net/gh/uncleacc/Img/cover/7.webp
-
+  - https://cdn.jsdelivr.net/gh/uncleacc/CDN/img/cover/0.webp
+  - https://cdn.jsdelivr.net/gh/uncleacc/CDN/img/cover/1.webp
+  - https://cdn.jsdelivr.net/gh/uncleacc/CDN/img/cover/2.webp
+  - https://cdn.jsdelivr.net/gh/uncleacc/CDN/img/cover/4.webp
+  - https://cdn.jsdelivr.net/gh/uncleacc/CDN/img/cover/6.webp
 # 背景图片样式 空 原图效果 filter-dim 阴影 filter-grid 横条 filter-dot 点点
 bgclass: 
 

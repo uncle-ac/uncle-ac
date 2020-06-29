@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    cursor: url(https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cursor/ayuda.cur), auto;
+    background-color: #f6f6f6;
+}
+hr {
+    border-top: 1px solid #eee;
+    margin: 30px 0px 30px;
+}
+p {
+    letter-spacing: 0.5px;
+    font-size: 13px;
+    line-height: 34px;
+    font-weight: 300;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+    cursor: url(https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cursor/No_Disponible.cur), auto;
+}
+.mybg {
+    display: inline-block;
+    margin: 0px 150px 150px 0px;
+}
+.myImg {
+    width: 800px;
+    height: 500px;
+}
+.first, .second{
+    font-family: '微软雅黑';
+    padding: 10px;
+}
+.title {
+    font-weight: 300;
+    font-size: 26px;
+    font-family: 'Roboto', sans-serif;
+}
+.wrap-about {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 13px;
+    color: #2F2F2F;
+    height: 250px;
+    width: 250px;
+    margin: 150px 300px 150px auto;
+}
+.wrap-card {
+    margin: 30px auto;
+    height: 502px;
+    width: 880px;
+}
+.card {
+    float: left;
+    padding: 30px 35px 45px;
+    height: 427px;
+    width: 350px;
+    background-color: #fff;
+    font-size: 13px;
+    /* box-shadow: 0 0 1px 0.1px; */
+}
+.bg {
+    float: left;
+    height: 502px;
+    width: 460px; 
+    background-color: #fff; 
+}
+.Img {
+    display: block;
+    margin: 10px auto;
+    height: 480px;
+    width: 440px;
+}
+.wrap-card:hover {
+    box-shadow: 10px 10px 10px 10px rgba(139, 130, 130, 0.5);
+}
+.time {
+    padding-left: 10px;
+    font-size: 14px;
+    color: #ccc;
+    letter-spacing: 0.4px;
+    margin-bottom: 20px;
+}
+.school {
+    display: inline-block;
+    line-height: 14px;
+    border-style: solid;
+    border-width: 0.3px;
+    border-radius: 6px;
+    color: #ccc;
+    padding: 8px 10px;
+}
+.content {
+    height: 201.6px;
+}
