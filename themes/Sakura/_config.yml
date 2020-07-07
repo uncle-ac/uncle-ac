@@ -100,8 +100,8 @@ movies:
 
 # Valine
 valine: true
-v_appId: OzumpR4mNEQHal4gBO3BRxj6-gzGzoHsz
-v_appKey: VfTovKhM6MXIwyAbfAogWSLn
+v_appId: pa33t4XrdRebMF7X622SEIws-MdYXbMMI
+v_appKey: x1GdhrTESDw2gSwPcPqiU4UX
 
 # 是否开启字数统计
 #不需要使用，直接设置值为false，或注释掉

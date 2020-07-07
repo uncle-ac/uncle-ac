@@ -81,10 +81,9 @@ theme: Sakura
 deploy:
   - type: git
     repo:
-      github: git@github.com:uncleacc/uncleacc.github.io.git
+      github: git@github.com:uncleacc/uncleacc.github.io.git,master
       # coding: git@e.coding.net:uncleacc/uncleacc.git
-      coding: git@e.coding.net:uncleacc/uncleacc/uncleacc.coding.me.git
-    branch: master
+      coding: git@e.coding.net:uncleacc/uncleacc/uncleacc.coding.me.git,master
   - type: baidu_url_submitter
 backup:
     type: git

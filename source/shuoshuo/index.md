@@ -33,4 +33,4 @@ var atemoji_array={
 <!-- <div id="artitalk_main"></div> -->
 <div id="lazy"></div>
 <div id="artitalk"></div>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/artitalk@v2.1.8"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/uncleacc/my_style/artitalk.js"></script>
