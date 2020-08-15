@@ -14,7 +14,7 @@ keywords:
 description: 一些有用的杂类知识
 photos: https://cdn.jsdelivr.net/gh/uncleacc/Img/textbg/0.webp
 ---
-# 通用模板
+## 通用模板
 ```
     #include<bits/stdc++.h>
     #define PI acos(-1)
@@ -27,7 +27,7 @@ photos: https://cdn.jsdelivr.net/gh/uncleacc/Img/textbg/0.webp
     typedef pair<int,int> pii;
     const int maxn = __;
 ```
-# auto用法
+## auto用法
 auto 后面的变量必须初始化，根据初始化的值来判断其类型，可以是自定义的类型，比如结构体
 {% fb_img https://img-blog.csdnimg.cn/20190511114519108.?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQyOTU3OTIz,size_16,color_FFFFFF,t_70 %}
 
@@ -79,6 +79,7 @@ auto& 可以对数组 a 中的元素进行修改.
 	}
 ```
 **auto特性:**
+
 1. auto不能作为函数参数
 2. auto不能直接声明数组
 3. 为了避免与C++98中的auto发生混淆，C++11只保留了auto作为类型指示符的用法
@@ -86,7 +87,7 @@ auto& 可以对数组 a 中的元素进行修改.
 5. auto不能定义类的非静态成员变量
 6. 实例化模板时不能使用auto作为模板参数
 
-# 加快cin cout的速度
+## 加快cin cout的速度
 使用:
 
 cin，cout之所以效率低，是因为先把要输出的东西存入缓冲区，再输出，导致效率降低，而这段语句可以来打消iostream的输入 输出缓存，可以节省许多时间，使效率与scanf与printf相差无几
@@ -97,9 +98,9 @@ cin.tie(0) 解除cin和cout的绑定
 
 cout.tie(0)
 
-# cout<<endl的锅
+## cout<<endl的锅
 使用cout换行时当数据量很大时最好使用cout<<"\n"这个速度快一点点，吃过这样的亏
-# 向上取整
+## 向上取整
 当求a/b向上取整时可以：
 ```
   int ans=(a-1)/b+1;
@@ -119,13 +120,46 @@ ceil(x)返回不大于x的最小整数
 
 **两者对整数没有区别，对负数结果不同**
 
-# 二分
+## 二分
 二分过程最好用mid = (l+r)>>1
 
 对正数无影响，但负数因为涉及到向上还是向下取整，有区别，无脑全部用>>就行了
-# 奇偶向上取整问题
+## 奇偶向上取整问题
+
 该数是如果是偶数结果不用动，如果是奇数结果就加1，一个小技巧吧， ans + = ( n & 1 )
-# STL
+
+## 马拉车算法
+
+查找最大回文子串
+
+```c
+string Manacher(string s) {
+    // Insert '#'
+    string t="$#";
+    for (int i=0;i<s.size();++i) {
+        t+=s[i];
+        t+="#";
+    }
+    // Process t
+    vector<int> p(t.size(), 0);
+    int mx = 0, id = 0, resLen = 0, resCenter = 0;
+    for(int i=1;i<t.size();++i) {
+        p[i]= mx>i ? min(p[2*id-i],mx-i) : 1;
+        while(t[i+p[i]]==t[i-p[i]]) ++p[i];
+        if(mx<i+p[i]){
+            mx=i+p[i];
+            id=i;
+        }
+        if(resLen<p[i]){ //起始索引 
+            resLen=p[i];
+            resCenter=i;
+        }
+    }
+    return s.substr((resCenter-resLen)/2,resLen-1);
+}
+```
+
+## STL
 * find函数
 ```
 find函数有三个参数, 分别代表 

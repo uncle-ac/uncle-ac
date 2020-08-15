@@ -6,7 +6,7 @@ avatar: >-
 authorAbout: 一个好奇的人
 authorDesc: 一个好奇的人
 comments: true
-photos: 'https://cdn.jsdelivr.net/gh/uncleacc/Img/textbg/20.webp'
+photos: 'https://cdn.jsdelivr.net/gh/uncleacc/Img/textbg/70.webp'
 date: 2020-08-02 20:42:26
 authorLink:
 categories: 题目

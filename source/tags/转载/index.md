@@ -19,3 +19,8 @@ photos: https://cdn.jsdelivr.net/gh/uncleacc/Img/cover/9.webp
 [矩阵快速幂](https://www.bilibili.com/video/BV1K441167eE?from=search&seid=6804066420902899426) ： 详细讲解了矩阵快速幂
 
 [递推矩阵加速](https://www.bilibili.com/video/BV1z4411m7TF?t=797) ： 讲解了如何通过矩阵快速幂把O(N)的递推式子时间复杂度降到O(LogN)
+
+[马拉车算法](https://www.jianshu.com/p/392172762e55)：查找最大回文子串O(N)
+
+[链式前向星](https://blog.csdn.net/ACdreamers/article/details/16902023)：链式前向星
+
