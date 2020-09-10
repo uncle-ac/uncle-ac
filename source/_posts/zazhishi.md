@@ -159,7 +159,39 @@ string Manacher(string s) {
 }
 ```
 
+## 二进制枚举
+
+第一次积分赛D题--憨憨龙的烦恼
+
+```c
+#include <bits/stdc++.h>
+#define ios ios::sync_with_stdio(0), cin.tie(0), cout.tie(0)
+#define debug freopen("in.txt","r",stdin),freopen("out.txt","w",stdout );
+using namespace std;
+typedef long long ll;
+const int MAXN=1e6;
+int a[MAXN];
+int main()
+{
+    int n,m;
+    cin>>n>>m;
+    for(int i=1;i<=n;i++) cin>>a[i];
+    for(int i=1;i<=(1<<n);i++){
+        int sum=0;
+        for(int j=1;j<=n;j++){
+            if(i>>(j-1)&1) sum+=a[j];
+        }
+        if(sum%m==0 && sum){
+            cout<<sum<<'\n';
+            break;
+        }
+    }
+    return 0;
+}
+```
+
 ## STL
+
 * find函数
 ```
 find函数有三个参数, 分别代表 

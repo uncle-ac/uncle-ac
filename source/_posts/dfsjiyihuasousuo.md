@@ -1,3 +1,20 @@
+---
+title: dfs记忆化搜索
+author: uncleacc
+avatar: >-
+  https://dss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3616765171,3721318254&fm=26&gp=0.jpg
+authorAbout: 一个好奇的人
+authorDesc: 一个好奇的人
+comments: true
+photos: 'https://cdn.jsdelivr.net/gh/uncleacc/Img/textbg/75.webp'
+date: 2020-08-05 11:08:45
+authorLink:
+categories: 题目
+tags: 集训
+keywords:
+description: dfs记忆化搜索训练，又是一个debug特别难，而且很抽象的算法
+---
+
 > dfs标记的位置太重要了，放在不同位置产生的效果都有巨大的差别，记录今天的一些dfs记忆化搜索题目
 
 ## A\- Function Run Fun

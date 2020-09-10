@@ -1,12 +1,12 @@
 ---
-title: jixun5
+title: 积分赛5
 author: uncleacc
 avatar: >-
   https://dss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3616765171,3721318254&fm=26&gp=0.jpg
 authorAbout: 一个好奇的人
 authorDesc: 一个好奇的人
 comments: true
-photos: 'https://cdn.jsdelivr.net/gh/uncleacc/Img/textbg/67.webp'
+photos: 'https://cdn.jsdelivr.net/gh/uncleacc/Img/textbg/72.webp'
 date: 2020-08-15 22:19:23
 authorLink:
 categories: 题目

@@ -19,7 +19,7 @@ photos: https://cdn.jsdelivr.net/gh/uncleacc/Img/textbg/49.webp
 ## ACWING-797. 差分
 超级模板
 ### Code
-```
+```c
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN=1e5+100;
@@ -45,7 +45,7 @@ int main()
 ## 洛谷-海底高铁
 算出每两个城市的往返次数，然后贪心一下，找到最小的，这道题之前做过，当时第一次就AC了，这道题应该不难
 ### Code
-```
+```c
 #include<bits/stdc++.h>
 #define ios ios::sync_with_stdio(0);cin.tie(0);cout.tie(0)
 using namespace std;
@@ -78,13 +78,14 @@ int main(){
     return 0;
 }
 ```
-# 倍增&&ST表
+## 倍增&&ST表
 首先明白倍增是一种思想而不是模板，它与ST并没有必然的联系，不是主要有倍增就必然出现ST，做倍增题一定要明白是对什么倍增的，通常就是对区间长度或者距离倍增，使用倍增通常有(RMQ)即区间最值查询(第二道题)，以及LAC这个还没学，ST表的核心是找到ST的递推关系，从小往大推，直到打完所有表，时间复杂度是O(mlogn)，m为结点数量，n是走的步数(2^0,2^1...)， `2^20` 就已经超过 `1e6` 了，`2^64` 大于 `1e20`，所以logn是非常小的，最多几十次，复杂度记乎可以看成O(N*10)
-## AtCoder - abc167_d
+### AtCoder - abc167_d
 一道图上倍增的题目，别看这个1e18很大，它的log级别比64还小，用倍增做时间复杂度变成了O(NlongM)，就是2e6的样子   
 这里st表很直接，储存的就是跳了N此后到达位置，特别特别需要注意的是查询千万不能用( 1 << i )，这是特别大的数字，我不明白为啥m是ll，就算把( 1 << i )转化为ll类型再进行与操作还是不行，ll不是64位的吗？范围应该是够的，奇怪，不过以后最好让m右移这样不会爆int，当然也可以用while遍历每一位
-### Code
-```
+#### Code
+
+```c
 #include<stdio.h>
 #include<iostream>
 #include<stdlib.h>
@@ -118,12 +119,12 @@ int main()
 }
 
 ```
-## ACWING-1270. 数列区间最大值
+### ACWING-1270. 数列区间最大值
 一道模板RMQ题目，这道题ST储存的是每一段区间的最值，倍增的是区间长度，就这道题而言，一段区间的最大值可以由这段区间从中间分开的两端区间的最值的合并，而且每一个数都是可以用2进制表示的，那么就一定用st表中的数相加得到
 
 st[i][j]表示从i这一点开始数2^j^个数的最值，即往后数2^(j-1)^个数的最值
-### Code
-```
+#### Code
+```c
 #include<bits/stdc++.h>
 #define ios ios::sync_with_stdio(0);cin.tie(0);cout.tie(0) 
 using namespace std;
@@ -156,10 +157,10 @@ int main()
 }
 
 ```
-## 牛客竞赛- 15429 倍增
+### 牛客竞赛- 15429 倍增
 这道题卡了一天，还是由于我对倍增理解不深，这道题是对往后分2^j^段倍增的，ST表储存的是分成2^j^段对多能到达的距离，讲解全在代码里了
-### Code
-```
+#### Code
+```c
 #include<bits/stdc++.h>
 #define ios ios::sync_with_stdio(0);cin.tie(0);cout.tie(0)
 using namespace std;

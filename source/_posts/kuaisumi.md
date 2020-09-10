@@ -11,7 +11,7 @@ photos: https://cdn.jsdelivr.net/gh/uncleacc/Img/textbg/8.webp
 ---
 
 ## 原理
-先举个例子，比如说算3^6,你要怎么算，用6个6相乘对不对，那要是3^1000呢？1000个3相乘，复杂度为O(N)，现在我们这样算，6的二进制是110，所以6=1*(2^2)+1*(2^1)+0*(2^0)，那么3^6就变成了3^( 1*(2^2)+1*(2^1)+0*(2^0) )=3^(1*(2^2)) * 3^(1*(2^1)) * 3^(0*(2^0))，这其实就是快速幂的原理，看起来麻烦了对吗？OK，先不看复杂度，先看用代码如何实现，我们可以用一个数来充当3^(1*(2^2))、3^(1*(2^1))、3^(0*(2^0))，在下面的代码中y就是这个变量，不是每一次都要算的，比如3^(0*(2^0))=1，乘不乘都一样，那怎么判断呢？我们每次取二进制数的最后一位，要么是0要么是1，如果是0，就不用不用乘，否则就乘，先看代码：
+先举个例子，比如说算3^6^,你要怎么算，用6个6相乘对不对，那要是3^1000^呢？1000个3相乘，复杂度为O(N)，现在我们这样算，6的二进制是110，所以6=1(2^2^)+1(2^1^)+0(2^0^)，那么3^6^就变成了3^( 1(2^2^)+1(2^1^)+0(2^0^) )=3^(1*(2^2^)) * 3^(1*(2^1^))^ * 3^(0\*(2^0^))^，这其实就是快速幂的原理，看起来麻烦了对吗？OK，先不看复杂度，先看用代码如何实现，我们可以用一个数来充当3^(1\*(2^2^))^、3^(1\*(2^1^))^、3^(0\*(2^0^))^，在下面的代码中y就是这个变量，不是每一次都要算的，比如3^(0*(2^0^))^=1，乘不乘都一样，那怎么判断呢？我们每次取二进制数的最后一位，要么是0要么是1，如果是0，就不用不用乘，否则就乘，先看代码：
 ```
 int p(int a,int b){
   int t,y;  //定义两个变量，t起到类乘的作用，而y则就是每一次要乘的数
@@ -29,13 +29,14 @@ int p(int a,int b){
 也许你会疑惑明明步骤变多了怎么会快了呢？这只是你的直观感觉，代码是变长了，但次数确确实实变少了，我们来看上面的代码，复杂度主要就在于循环上，循环的条件是b!=0，而每次不都要除以2，设循环次数为x，那么2^x=b，x=log(2,b)，循环里面运算次数最多为3次，那么复杂度最大就是3log(2,N)，3是常数，当数值很大时，可以省略，复杂度为log(2,N)，那么假如算2^10000，常规需要10000次运算，而快速幂只需要14*3次运算，是不是很神奇呢？
 ## 应用
 学习了这个算法有什么用呢？实际上快速幂是一个非常常用的算法，它经常与其他算法一起混用，一般来说快速幂适用于求一个指数非常高的数对某个数的余数，例如：题目：
-现在星期日，问：再过2^10000天后星期几？学习了快速幂这种题就是送分题了，每次对7取余就行了
+现在星期日，问：再过2^10000^天后星期几？学习了快速幂这种题就是送分题了，每次对7取余就行了
+
 ## 题目
 
 附上链接，有兴趣的小伙伴可以前往相关网站做一下
 
     Fermat's theorem states that for any prime number p and for any integer a > 1, ap = a (mod p). That is, if we raise a to the pth power and divide by p, the remainder is a. Some (but not very many) non-prime values of p, known as base-a pseudoprimes, have this property for some a. (And some, known as Carmichael Numbers, are base-a pseudoprimes for all a.)
-
+    
     Given 2 < p ≤ 1000000000 and 1 < a < p, determine whether or not p is a base-a pseudoprime.
 Input
 
@@ -103,7 +104,7 @@ Rightmost Digit
 Given a positive integer N, you should output the most right digit of N^N.
 
 Input
-   
+
     The input contains several test cases. The first line of the input is a single integer T which is the number of test cases. T test cases follow.
     Each test case contains a single positive integer N(1<=N<=1,000,000,000).
 Output
@@ -120,8 +121,8 @@ Sample Output
     6
 
 
-            
-      
+​            
+​      
 
 Hint
 
@@ -212,5 +213,3 @@ AC代码
 地址：https://nanti.jisuanke.com/t/T1234
 
 >制作不易，您的赞助是我最大的动力，留下您的评论，有条件的小伙伴可以打赏2毛钱，谢谢各位老板（owo）
-
-![](https://dss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1690746261,260501959&fm=111&gp=0.jpg)
