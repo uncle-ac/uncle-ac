@@ -6,7 +6,7 @@ favicon: /images/favicon.ico
 avatar: /img/custom/avatar.png
 url: https://uncleacc.github.io
 description: 真正的大师永远怀着一颗学徒的心
-cdn: https://cdn.jsdelivr.net/gh/uncleacc/cdn@1.4
+cdn: https://cdn.jsdelivr.net/gh/uncleacc/cdn@1.5
 pjax: 1
 # 1开启
 mathjax: 1
