@@ -528,7 +528,7 @@ struct CrossList&#123;  //矩阵结构
 		&#125;
 		else&#123;
 			OLink j;
-			for(j=CL.Rhead[row];j-&gt;right &amp;&amp; j-&gt;right-&gt;col&lt;=col;j=j-&gt;right);  //找到插入位置
+			for(j=CL.Rhead[row];j-&gt;right &amp;&amp; j-&gt;right-&gt;col&lt;col;j=j-&gt;right);  //找到插入位置
 			if(j-&gt;col==col)&#123;  //当当前坐标有值时覆盖它
 				j-&gt;val=val;
 				continue;
@@ -1259,7 +1259,7 @@ $(document).ready(function() {
             <!-- 樱花飘落 -->
             <!-- <script src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/sakura.js"></script> -->
             <!-- 伴娘 -->
-            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
+            <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css"> -->
             <!-- 这条在sakura中已有，可不添加 -->
             <script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>
             <!-- 预加载 -->
